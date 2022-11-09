@@ -60,7 +60,7 @@ can_i_deploy:
 	@echo "\n========== STAGE: can-i-deploy? ==========\n"
 	@"${PACT_CLI}" broker can-i-deploy \
 	  --pacticipant ${PACTICIPANT} \
-	  --version ${GIT_COMMIT} \
+	  --version 1.0.0 \
 	  --to-environment production \
 	  --retry-while-unknown 0 \
 	  --retry-interval 10
