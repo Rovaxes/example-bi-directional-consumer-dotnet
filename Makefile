@@ -34,7 +34,7 @@ fake_ci:
 
 publish_pacts:
 	@echo "\n========== STAGE: publish pacts ==========\n"
-	@"${PACT_CLI}" publish ${PWD}/tests/pacts --consumer-app-version 1.0.0 --branch ${GIT_BRANCH}
+	@"${PACT_CLI}" publish ${PWD}/tests/pacts --consumer-app-version ${GIT_COMMIT} --branch ${GIT_BRANCH}
 
 ## =====================
 ## Build/test tasks
@@ -60,7 +60,7 @@ can_i_deploy:
 	@echo "\n========== STAGE: can-i-deploy? ==========\n"
 	@"${PACT_CLI}" broker can-i-deploy \
 	  --pacticipant ${PACTICIPANT} \
-	  --version 1.0.0 \
+	  --version ${GIT_COMMIT} \
 	  --to-environment production \
 	  --retry-while-unknown 0 \
 	  --retry-interval 10
