@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dotnet-version: ["1.0.x"]
+        dotnet-version: ["3.1.x"]
         pact_provider:
           [
             # "pactflow-example-bi-directional-provider-dredd",
