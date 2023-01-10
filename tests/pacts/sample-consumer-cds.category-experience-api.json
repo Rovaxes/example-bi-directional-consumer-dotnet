@@ -56,13 +56,13 @@
                     "productWheelType": null,
                     "defaultView": "GRID",
                     "seoTitle": "Tools & Hardware",
-                    "seoCopy": null,
+                    "seoCopy": "",
                     "seoDescription": "Shop Canadian Tire online for quality power and hand tools, replacement parts, paint, garage storage and much more. Pick up in store at any of 500+ locations.",
-                    "canonicalUrl": null,
+                    "canonicalUrl": "",
                     "searchLink": "?q1=DC0000004;x1=ast-id-level-1;lang=en_CA"
                 }
             },
-            "timestamp": "2023-01-10T21:30:11.950Z"
+            "timestamp": "2023-01-10T21:51:45.276Z"
         },
         {
             "description": "GET_/api/v1/categories/DC0000004_400 - Get the category tree for a provided identifier.",
@@ -94,7 +94,7 @@
                     "isCdsError": true
                 }
             },
-            "timestamp": "2023-01-10T21:30:12.126Z"
+            "timestamp": "2023-01-10T21:51:45.370Z"
         },
         {
             "description": "GET_/api/v1/categories/DC0000004_500 - Get the category tree for a provided identifier.",
@@ -126,7 +126,7 @@
                     "isCdsError": true
                 }
             },
-            "timestamp": "2023-01-10T21:30:12.214Z"
+            "timestamp": "2023-01-10T21:51:45.520Z"
         },
         {
             "description": "GET_/api/v1/categories_200 - Get the category tree for a provided identifier.",
@@ -157,7 +157,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-10T21:30:12.475Z"
+            "timestamp": "2023-01-10T21:51:45.748Z"
         },
         {
             "description": "GET_/api/v1/categories_400 - Get the category tree for a provided identifier.",
@@ -189,7 +189,7 @@
                     "isCdsError": true
                 }
             },
-            "timestamp": "2023-01-10T21:30:12.631Z"
+            "timestamp": "2023-01-10T21:51:45.819Z"
         },
         {
             "description": "GET_/health_200 - The health status of the service",
@@ -207,7 +207,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-10T21:30:15.643Z"
+            "timestamp": "2023-01-10T21:51:48.827Z"
         },
         {
             "description": "GET_/health_500 - The health status of the service",
@@ -225,7 +225,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-10T21:30:18.647Z"
+            "timestamp": "2023-01-10T21:51:51.842Z"
         }
     ],
     "metadata": {
