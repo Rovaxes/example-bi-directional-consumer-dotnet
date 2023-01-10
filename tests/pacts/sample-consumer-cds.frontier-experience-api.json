@@ -3,9 +3,30 @@
         "name": "sample-consumer"
     },
     "provider": {
-        "name": "cds.category-experience-api"
+        "name": "cds.frontier-experience-api"
     },
     "interactions": [
+        {
+            "description": "GET_/frontier/sku/0586111_200 - Get Asset from SKU ID.",
+            "request": {
+                "method": "GET",
+                "path": "/frontier/sku/0586111",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": "string"
+            },
+            "timestamp": "2023-01-10T20:40:15.232Z"
+        },
         {
             "description": "GET_/health_200 - The health status of the service",
             "request": {
@@ -22,7 +43,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-10T19:53:06.186Z"
+            "timestamp": "2023-01-10T20:40:18.237Z"
         },
         {
             "description": "GET_/health_500 - The health status of the service",
@@ -40,7 +61,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-10T19:53:09.197Z"
+            "timestamp": "2023-01-10T20:40:21.250Z"
         }
     ],
     "metadata": {
