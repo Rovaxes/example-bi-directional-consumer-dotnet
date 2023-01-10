@@ -36,6 +36,11 @@ publish_pacts:
 	@echo "\n========== STAGE: publish pacts ==========\n"
 	@"${PACT_CLI}" publish ${PWD}/tests/pacts --consumer-app-version 1.0.0 --branch ${GIT_BRANCH}
 
+publish_pacts_custom: 
+	@echo "\n========== STAGE: publish pacts ==========\n"
+	@"${PACT_CLI}" publish ${PWD}/tests/pacts --consumer-app-version 1.0.0 --branch ${GIT_BRANCH}
+
+
 ## =====================
 ## Build/test tasks
 ## =====================

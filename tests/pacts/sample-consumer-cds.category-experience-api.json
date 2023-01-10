@@ -1,0 +1,55 @@
+{
+    "consumer": {
+        "name": "sample-consumer"
+    },
+    "provider": {
+        "name": "cds.category-experience-api"
+    },
+    "interactions": [
+        {
+            "description": "GET_/health_200 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2023-01-10T19:53:06.186Z"
+        },
+        {
+            "description": "GET_/health_500 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 500,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2023-01-10T19:53:09.197Z"
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "2.0.0"
+        },
+        "client": {
+            "name": "pact-mountebank-adapter",
+            "version": "1.0.0"
+        }
+    }
+}

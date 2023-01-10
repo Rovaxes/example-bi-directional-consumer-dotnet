@@ -12,6 +12,26 @@ env:
   GITHUB_REF: ${{ github.ref }}
 
 jobs:
+  custom-publish:
+    name: "Custom Publish"
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ["3.1.x"]
+        pact_provider:
+          [
+            # "pactflow-example-bi-directional-provider-dredd",
+            # "pactflow-example-bi-directional-provider-restassured",
+            "pactflow-example-bi-directional-provider-postman",
+            # "pactflow-example-provider",
+            # 'pactflow-example-bi-directional-provider-dotnet'
+          ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish pacts for ${{ matrix.pact_provider }}
+        run: GIT_BRANCH=${GITHUB_REF:11} make publish_pacts_custom
+        env:
+          PACT_PROVIDER: ${{ matrix.pact_provider }}
   test:
     name: "Build and Test (dotnet)"
     runs-on: ubuntu-latest
