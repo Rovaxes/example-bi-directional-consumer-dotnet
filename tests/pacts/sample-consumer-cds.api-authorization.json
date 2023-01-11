@@ -14,16 +14,18 @@
                 "query": "",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "Authorization": "AUTHORIZATION"
                 }
             },
             "response": {
                 "status": 200,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:38:53.314Z"
+            "timestamp": "2023-01-11T18:49:56.659Z"
         },
         {
             "description": "POST_/signin/access/token_401 - Signin user via Gigya's JWT",
@@ -33,16 +35,18 @@
                 "query": "",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "Authorization": "AUTHORIZATION"
                 }
             },
             "response": {
                 "status": 401,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:38:56.322Z"
+            "timestamp": "2023-01-11T18:49:59.668Z"
         },
         {
             "description": "POST_/signin/access/token_403 - Signin user via Gigya's JWT",
@@ -52,16 +56,18 @@
                 "query": "",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "Authorization": "AUTHORIZATION"
                 }
             },
             "response": {
                 "status": 403,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:38:59.334Z"
+            "timestamp": "2023-01-11T18:50:02.676Z"
         },
         {
             "description": "POST_/signin/triangleId_200 - Signin user via CTFS access token",
@@ -70,16 +76,18 @@
                 "path": "/signin/triangleId",
                 "query": "",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 200,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:02.343Z"
+            "timestamp": "2023-01-11T18:50:08.707Z"
         },
         {
             "description": "POST_/signin/triangleId_400 - Signin user via CTFS access token",
@@ -88,16 +96,18 @@
                 "path": "/signin/triangleId",
                 "query": "",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 400,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:05.358Z"
+            "timestamp": "2023-01-11T18:50:11.727Z"
         },
         {
             "description": "POST_/signin/rba-tmx_200 - Signin the user with RBA using ThreatMetrix service",
@@ -107,6 +117,7 @@
                 "query": "",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "X-TMX-Session-ID": "X-TMX-SESSION-ID",
                     "X-Forwarded-For": "X-FORWARDED-FOR",
                     "service-client": "SERVICE-CLIENT",
@@ -116,10 +127,11 @@
             "response": {
                 "status": 200,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:08.377Z"
+            "timestamp": "2023-01-11T18:50:17.767Z"
         },
         {
             "description": "POST_/signin/rba-tmx_400 - Signin the user with RBA using ThreatMetrix service",
@@ -129,6 +141,7 @@
                 "query": "",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "X-TMX-Session-ID": "X-TMX-SESSION-ID",
                     "X-Forwarded-For": "X-FORWARDED-FOR",
                     "service-client": "SERVICE-CLIENT",
@@ -138,10 +151,11 @@
             "response": {
                 "status": 400,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:11.388Z"
+            "timestamp": "2023-01-11T18:50:20.787Z"
         },
         {
             "description": "POST_/refresh/access/token_200 - Updates Access-Token with new payload.",
@@ -150,16 +164,18 @@
                 "path": "/refresh/access/token",
                 "query": "",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 200,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:14.408Z"
+            "timestamp": "2023-01-11T18:50:26.807Z"
         },
         {
             "description": "POST_/refresh/access/token_401 - Updates Access-Token with new payload.",
@@ -168,16 +184,18 @@
                 "path": "/refresh/access/token",
                 "query": "",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 401,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:17.420Z"
+            "timestamp": "2023-01-11T18:50:29.825Z"
         },
         {
             "description": "GET_/refresh/hybris/access/token_200 - Refresh Hybris access token.",
@@ -186,16 +204,18 @@
                 "path": "/refresh/hybris/access/token",
                 "query": "refreshToken=exampleToken",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 200,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:20.428Z"
+            "timestamp": "2023-01-11T18:50:32.830Z"
         },
         {
             "description": "GET_/refresh/hybris/access/token_502 - Refresh Hybris access token.",
@@ -204,16 +224,18 @@
                 "path": "/refresh/hybris/access/token",
                 "query": "refreshToken=exampleToken",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 502,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:23.444Z"
+            "timestamp": "2023-01-11T18:50:35.845Z"
         },
         {
             "description": "GET_/signout_200 - Logout a customer",
@@ -231,7 +253,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T16:39:26.450Z"
+            "timestamp": "2023-01-11T18:50:38.854Z"
         },
         {
             "description": "GET_/signout_401 - Logout a customer",
@@ -240,16 +262,18 @@
                 "path": "/signout",
                 "query": "",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 401,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:29.460Z"
+            "timestamp": "2023-01-11T18:50:41.863Z"
         },
         {
             "description": "GET_/signout_403 - Logout a customer",
@@ -258,16 +282,18 @@
                 "path": "/signout",
                 "query": "",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 403,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:32.478Z"
+            "timestamp": "2023-01-11T18:50:44.879Z"
         },
         {
             "description": "POST_/invalidate/password-changed_200 - API endpoint for killing active sessions",
@@ -286,7 +312,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T16:39:35.493Z"
+            "timestamp": "2023-01-11T18:50:47.883Z"
         },
         {
             "description": "POST_/invalidate/password-changed_400 - API endpoint for killing active sessions",
@@ -296,16 +322,18 @@
                 "query": "",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "Authorization": "AUTHORIZATION"
                 }
             },
             "response": {
                 "status": 400,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:38.499Z"
+            "timestamp": "2023-01-11T18:50:50.899Z"
         },
         {
             "description": "POST_/invalidate/password-changed_401 - API endpoint for killing active sessions",
@@ -315,16 +343,18 @@
                 "query": "",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "Authorization": "AUTHORIZATION"
                 }
             },
             "response": {
                 "status": 401,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:41.511Z"
+            "timestamp": "2023-01-11T18:50:53.915Z"
         },
         {
             "description": "POST_/invalidate/password-changed_403 - API endpoint for killing active sessions",
@@ -334,16 +364,18 @@
                 "query": "",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "Authorization": "AUTHORIZATION"
                 }
             },
             "response": {
                 "status": 403,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:44.517Z"
+            "timestamp": "2023-01-11T18:50:56.928Z"
         },
         {
             "description": "POST_/invalidate/password-updated_200 - API endpoint for killing active sessions",
@@ -361,7 +393,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T16:39:47.529Z"
+            "timestamp": "2023-01-11T18:51:02.953Z"
         },
         {
             "description": "POST_/invalidate/password-updated_400 - API endpoint for killing active sessions",
@@ -370,16 +402,18 @@
                 "path": "/invalidate/password-updated",
                 "query": "",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 400,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:50.542Z"
+            "timestamp": "2023-01-11T18:51:05.959Z"
         },
         {
             "description": "GET_/sso/check-cookie_302 - Check cookie if a user has already logged in.",
@@ -398,7 +432,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T16:39:53.559Z"
+            "timestamp": "2023-01-11T18:51:08.965Z"
         },
         {
             "description": "GET_/sso/check-cookie_401 - Check cookie if a user has already logged in.",
@@ -408,16 +442,18 @@
                 "query": "refClient=ctr%2Fweb",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "Cookie": "COOKIE"
                 }
             },
             "response": {
                 "status": 401,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:56.566Z"
+            "timestamp": "2023-01-11T18:51:11.971Z"
         },
         {
             "description": "GET_/sso/check-cookie_403 - Check cookie if a user has already logged in.",
@@ -427,16 +463,18 @@
                 "query": "refClient=ctr%2Fweb",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "Cookie": "COOKIE"
                 }
             },
             "response": {
                 "status": 403,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:39:59.575Z"
+            "timestamp": "2023-01-11T18:51:14.978Z"
         },
         {
             "description": "GET_/sso/set-cookie_302 - Set cookie to the refferer domain",
@@ -455,7 +493,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T16:40:02.590Z"
+            "timestamp": "2023-01-11T18:51:17.988Z"
         },
         {
             "description": "GET_/sso/set-cookie_401 - Set cookie to the refferer domain",
@@ -465,16 +503,18 @@
                 "query": "refClient=ctr%2Fweb&serviceClient=ctr%2Fweb",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "x-auth": "Bearer <JWT Token>"
                 }
             },
             "response": {
                 "status": 401,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:40:05.610Z"
+            "timestamp": "2023-01-11T18:51:21.002Z"
         },
         {
             "description": "GET_/sso/set-cookie_403 - Set cookie to the refferer domain",
@@ -484,16 +524,18 @@
                 "query": "refClient=ctr%2Fweb&serviceClient=ctr%2Fweb",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "x-auth": "Bearer <JWT Token>"
                 }
             },
             "response": {
                 "status": 403,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:40:08.628Z"
+            "timestamp": "2023-01-11T18:51:24.019Z"
         },
         {
             "description": "GET_/sso/3-party-cookie/enabled_200 - Check 3rd party cookies support",
@@ -502,16 +544,18 @@
                 "path": "/sso/3-party-cookie/enabled",
                 "query": "",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 200,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:40:11.635Z"
+            "timestamp": "2023-01-11T18:51:27.034Z"
         },
         {
             "description": "GET_/sso/3-party-cookie/enabled_401 - Check 3rd party cookies support",
@@ -520,16 +564,18 @@
                 "path": "/sso/3-party-cookie/enabled",
                 "query": "",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 401,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:40:14.645Z"
+            "timestamp": "2023-01-11T18:51:30.040Z"
         },
         {
             "description": "GET_/sso/3-party-cookie/enabled_403 - Check 3rd party cookies support",
@@ -538,16 +584,18 @@
                 "path": "/sso/3-party-cookie/enabled",
                 "query": "",
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
                 }
             },
             "response": {
                 "status": 403,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:40:17.659Z"
+            "timestamp": "2023-01-11T18:51:33.058Z"
         },
         {
             "description": "GET_/sso/signout_302 - Logout from all banners",
@@ -565,7 +613,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T16:40:20.678Z"
+            "timestamp": "2023-01-11T18:51:36.074Z"
         },
         {
             "description": "POST_/gigya/social/link-account_200 - Link user's account",
@@ -575,16 +623,18 @@
                 "query": "",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "Authorization": "AUTHORIZATION"
                 }
             },
             "response": {
                 "status": 200,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:40:23.686Z"
+            "timestamp": "2023-01-11T18:51:39.093Z"
         },
         {
             "description": "POST_/gigya/social/link-account_401 - Link user's account",
@@ -594,16 +644,18 @@
                 "query": "",
                 "headers": {
                     "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
                     "Authorization": "AUTHORIZATION"
                 }
             },
             "response": {
                 "status": 401,
                 "headers": {
-                    "Connection": "close"
+                    "Connection": "close",
+                    "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T16:40:26.700Z"
+            "timestamp": "2023-01-11T18:51:42.099Z"
         }
     ],
     "metadata": {
