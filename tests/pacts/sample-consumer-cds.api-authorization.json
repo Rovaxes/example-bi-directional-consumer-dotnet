@@ -12,6 +12,9 @@
                 "method": "POST",
                 "path": "/signin/access/token",
                 "query": "",
+                "body": {
+                    "rememberMe": false
+                },
                 "headers": {
                     "Connection": "close",
                     "Accept": "application/json, text/plain, */*",
@@ -23,9 +26,20 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "email": "string",
+                    "UID": "string",
+                    "ecomId": "string",
+                    "userName": "string",
+                    "languages": "string",
+                    "token": "string",
+                    "ssoToken": "string",
+                    "ttl": 0,
+                    "role": "string"
                 }
             },
-            "timestamp": "2023-01-11T18:49:56.659Z"
+            "timestamp": "2023-01-11T21:33:35.304Z"
         },
         {
             "description": "POST_/signin/access/token_401 - Signin user via Gigya's JWT",
@@ -33,6 +47,9 @@
                 "method": "POST",
                 "path": "/signin/access/token",
                 "query": "",
+                "body": {
+                    "rememberMe": false
+                },
                 "headers": {
                     "Connection": "close",
                     "Accept": "application/json, text/plain, */*",
@@ -44,9 +61,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:49:59.668Z"
+            "timestamp": "2023-01-11T21:33:35.345Z"
         },
         {
             "description": "POST_/signin/access/token_403 - Signin user via Gigya's JWT",
@@ -54,6 +83,9 @@
                 "method": "POST",
                 "path": "/signin/access/token",
                 "query": "",
+                "body": {
+                    "rememberMe": false
+                },
                 "headers": {
                     "Connection": "close",
                     "Accept": "application/json, text/plain, */*",
@@ -65,9 +97,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:50:02.676Z"
+            "timestamp": "2023-01-11T21:33:35.381Z"
         },
         {
             "description": "POST_/signin/triangleId_200 - Signin user via CTFS access token",
@@ -75,6 +119,9 @@
                 "method": "POST",
                 "path": "/signin/triangleId",
                 "query": "",
+                "body": {
+                    "token": "token"
+                },
                 "headers": {
                     "Connection": "close",
                     "Accept": "application/json, text/plain, */*"
@@ -85,9 +132,20 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "email": "string",
+                    "UID": "string",
+                    "ecomId": "string",
+                    "userName": "string",
+                    "languages": "string",
+                    "token": "string",
+                    "ssoToken": "string",
+                    "ttl": 0,
+                    "role": "string"
                 }
             },
-            "timestamp": "2023-01-11T18:50:08.707Z"
+            "timestamp": "2023-01-11T21:33:35.648Z"
         },
         {
             "description": "POST_/signin/triangleId_400 - Signin user via CTFS access token",
@@ -95,6 +153,9 @@
                 "method": "POST",
                 "path": "/signin/triangleId",
                 "query": "",
+                "body": {
+                    "token": "token"
+                },
                 "headers": {
                     "Connection": "close",
                     "Accept": "application/json, text/plain, */*"
@@ -105,9 +166,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:50:11.727Z"
+            "timestamp": "2023-01-11T21:33:35.687Z"
         },
         {
             "description": "POST_/signin/rba-tmx_200 - Signin the user with RBA using ThreatMetrix service",
@@ -115,6 +188,12 @@
                 "method": "POST",
                 "path": "/signin/rba-tmx",
                 "query": "",
+                "body": {
+                    "loginID": "loginID",
+                    "password": "password",
+                    "deviceID": "deviceID",
+                    "targetEnv": "browser"
+                },
                 "headers": {
                     "Connection": "close",
                     "Accept": "application/json, text/plain, */*",
@@ -129,9 +208,48 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "callId": "ff775c0eeb744562b65e9c911a53d7b9",
+                    "errorCode": 0,
+                    "apiVersion": 2,
+                    "statusCode": 200,
+                    "statusReason": "OK",
+                    "time": "2022-12-29T15:38:14.547Z",
+                    "registeredTimestamp": 1650294011,
+                    "UID": "eefb10e2c9014f608fdec29a050cc3d5",
+                    "UIDSignature": "mpi7UB3+zn/wfFV1dAR7RjH0pZg=",
+                    "signatureTimestamp": "1672328294",
+                    "created": "2022-04-18T15:00:07.862Z",
+                    "createdTimestamp": 1650294007,
+                    "isActive": true,
+                    "isRegistered": true,
+                    "isVerified": true,
+                    "lastLogin": "2022-12-29T15:38:14.510Z",
+                    "lastLoginTimestamp": 1672328294,
+                    "lastUpdated": "2022-12-23T11:28:45.197Z",
+                    "lastUpdatedTimestamp": 1671794925197,
+                    "loginProvider": "site",
+                    "oldestDataUpdated": "2022-04-18T15:00:07.862Z",
+                    "oldestDataUpdatedTimestamp": 1650294007862,
+                    "profile": {
+                        "firstName": "example",
+                        "lastName": "example",
+                        "country": "CA",
+                        "email": "example@gmail.com"
+                    },
+                    "registered": "2022-04-18T15:00:11.676Z",
+                    "socialProviders": "site",
+                    "verified": "2022-04-18T15:00:42.277Z",
+                    "verifiedTimestamp": 1650294042277,
+                    "newUser": false,
+                    "sessionInfo": {
+                        "cookieName": "gac_4_IxnZThokDC2GKSUXZDzKFg",
+                        "cookieValue": "<TOKEN>"
+                    }
                 }
             },
-            "timestamp": "2023-01-11T18:50:17.767Z"
+            "timestamp": "2023-01-11T21:33:35.968Z"
         },
         {
             "description": "POST_/signin/rba-tmx_400 - Signin the user with RBA using ThreatMetrix service",
@@ -139,6 +257,12 @@
                 "method": "POST",
                 "path": "/signin/rba-tmx",
                 "query": "",
+                "body": {
+                    "loginID": "loginID",
+                    "password": "password",
+                    "deviceID": "deviceID",
+                    "targetEnv": "browser"
+                },
                 "headers": {
                     "Connection": "close",
                     "Accept": "application/json, text/plain, */*",
@@ -153,9 +277,18 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "errOrigin": "ATN",
+                    "statusCode": 400,
+                    "error": "Bad Request",
+                    "message": "Validation error(s)",
+                    "errCode": "00007",
+                    "data": null,
+                    "stack": "Error: Validation error(s)"
                 }
             },
-            "timestamp": "2023-01-11T18:50:20.787Z"
+            "timestamp": "2023-01-11T21:33:36.005Z"
         },
         {
             "description": "POST_/refresh/access/token_200 - Updates Access-Token with new payload.",
@@ -175,7 +308,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T18:50:26.807Z"
+            "timestamp": "2023-01-11T21:33:42.024Z"
         },
         {
             "description": "POST_/refresh/access/token_401 - Updates Access-Token with new payload.",
@@ -195,7 +328,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T18:50:29.825Z"
+            "timestamp": "2023-01-11T21:33:45.031Z"
         },
         {
             "description": "GET_/refresh/hybris/access/token_200 - Refresh Hybris access token.",
@@ -215,7 +348,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T18:50:32.830Z"
+            "timestamp": "2023-01-11T21:33:48.041Z"
         },
         {
             "description": "GET_/refresh/hybris/access/token_502 - Refresh Hybris access token.",
@@ -235,7 +368,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T18:50:35.845Z"
+            "timestamp": "2023-01-11T21:33:51.044Z"
         },
         {
             "description": "GET_/signout_200 - Logout a customer",
@@ -253,7 +386,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T18:50:38.854Z"
+            "timestamp": "2023-01-11T21:33:52.211Z"
         },
         {
             "description": "GET_/signout_401 - Logout a customer",
@@ -271,9 +404,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:50:41.863Z"
+            "timestamp": "2023-01-11T21:33:52.245Z"
         },
         {
             "description": "GET_/signout_403 - Logout a customer",
@@ -291,9 +436,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:50:44.879Z"
+            "timestamp": "2023-01-11T21:33:52.281Z"
         },
         {
             "description": "POST_/invalidate/password-changed_200 - API endpoint for killing active sessions",
@@ -312,7 +469,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T18:50:47.883Z"
+            "timestamp": "2023-01-11T21:33:55.285Z"
         },
         {
             "description": "POST_/invalidate/password-changed_400 - API endpoint for killing active sessions",
@@ -333,7 +490,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T18:50:50.899Z"
+            "timestamp": "2023-01-11T21:33:58.291Z"
         },
         {
             "description": "POST_/invalidate/password-changed_401 - API endpoint for killing active sessions",
@@ -354,7 +511,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T18:50:53.915Z"
+            "timestamp": "2023-01-11T21:34:01.309Z"
         },
         {
             "description": "POST_/invalidate/password-changed_403 - API endpoint for killing active sessions",
@@ -375,7 +532,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T18:50:56.928Z"
+            "timestamp": "2023-01-11T21:34:04.323Z"
         },
         {
             "description": "POST_/invalidate/password-updated_200 - API endpoint for killing active sessions",
@@ -393,7 +550,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T18:51:02.953Z"
+            "timestamp": "2023-01-11T21:34:10.343Z"
         },
         {
             "description": "POST_/invalidate/password-updated_400 - API endpoint for killing active sessions",
@@ -413,7 +570,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-11T18:51:05.959Z"
+            "timestamp": "2023-01-11T21:34:13.359Z"
         },
         {
             "description": "GET_/sso/check-cookie_302 - Check cookie if a user has already logged in.",
@@ -432,7 +589,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T18:51:08.965Z"
+            "timestamp": "2023-01-11T21:34:14.581Z"
         },
         {
             "description": "GET_/sso/check-cookie_401 - Check cookie if a user has already logged in.",
@@ -451,9 +608,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:51:11.971Z"
+            "timestamp": "2023-01-11T21:34:14.606Z"
         },
         {
             "description": "GET_/sso/check-cookie_403 - Check cookie if a user has already logged in.",
@@ -472,9 +641,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:51:14.978Z"
+            "timestamp": "2023-01-11T21:34:14.655Z"
         },
         {
             "description": "GET_/sso/set-cookie_302 - Set cookie to the refferer domain",
@@ -493,7 +674,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T18:51:17.988Z"
+            "timestamp": "2023-01-11T21:34:15.922Z"
         },
         {
             "description": "GET_/sso/set-cookie_401 - Set cookie to the refferer domain",
@@ -512,9 +693,17 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "errOrigin": "ATN",
+                    "statusCode": 400,
+                    "error": "Bad Request",
+                    "message": "Validation error(s)",
+                    "errCode": "00007",
+                    "stack": "Error: Validation error(s)"
                 }
             },
-            "timestamp": "2023-01-11T18:51:21.002Z"
+            "timestamp": "2023-01-11T21:34:15.955Z"
         },
         {
             "description": "GET_/sso/set-cookie_403 - Set cookie to the refferer domain",
@@ -533,9 +722,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:51:24.019Z"
+            "timestamp": "2023-01-11T21:34:16.014Z"
         },
         {
             "description": "GET_/sso/3-party-cookie/enabled_200 - Check 3rd party cookies support",
@@ -553,9 +754,12 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "result": true
                 }
             },
-            "timestamp": "2023-01-11T18:51:27.034Z"
+            "timestamp": "2023-01-11T21:34:16.285Z"
         },
         {
             "description": "GET_/sso/3-party-cookie/enabled_401 - Check 3rd party cookies support",
@@ -573,9 +777,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:51:30.040Z"
+            "timestamp": "2023-01-11T21:34:16.327Z"
         },
         {
             "description": "GET_/sso/3-party-cookie/enabled_403 - Check 3rd party cookies support",
@@ -593,9 +809,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:51:33.058Z"
+            "timestamp": "2023-01-11T21:34:16.371Z"
         },
         {
             "description": "GET_/sso/signout_302 - Logout from all banners",
@@ -613,7 +841,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-11T18:51:36.074Z"
+            "timestamp": "2023-01-11T21:34:17.694Z"
         },
         {
             "description": "POST_/gigya/social/link-account_200 - Link user's account",
@@ -632,9 +860,12 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "isLinked": true
                 }
             },
-            "timestamp": "2023-01-11T18:51:39.093Z"
+            "timestamp": "2023-01-11T21:34:18.174Z"
         },
         {
             "description": "POST_/gigya/social/link-account_401 - Link user's account",
@@ -653,9 +884,21 @@
                 "headers": {
                     "Connection": "close",
                     "Content-Type": "application/json"
+                },
+                "body": {
+                    "x-request-id": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": {},
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-11T18:51:42.099Z"
+            "timestamp": "2023-01-11T21:34:18.247Z"
         }
     ],
     "metadata": {
