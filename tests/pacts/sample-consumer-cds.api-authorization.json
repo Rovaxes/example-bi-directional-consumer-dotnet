@@ -39,7 +39,7 @@
                     "role": "string"
                 }
             },
-            "timestamp": "2023-01-12T18:22:51.666Z"
+            "timestamp": "2023-01-12T18:49:34.515Z"
         },
         {
             "description": "POST_/signin/access/token_401 - Signin user via Gigya's JWT",
@@ -75,7 +75,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:22:51.710Z"
+            "timestamp": "2023-01-12T18:49:34.563Z"
         },
         {
             "description": "POST_/signin/access/token_403 - Signin user via Gigya's JWT",
@@ -111,7 +111,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:22:51.764Z"
+            "timestamp": "2023-01-12T18:49:34.605Z"
         },
         {
             "description": "POST_/signin/triangleId_200 - Signin user via CTFS access token",
@@ -145,7 +145,7 @@
                     "role": "string"
                 }
             },
-            "timestamp": "2023-01-12T18:22:52.093Z"
+            "timestamp": "2023-01-12T18:49:34.925Z"
         },
         {
             "description": "POST_/signin/triangleId_400 - Signin user via CTFS access token",
@@ -180,7 +180,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:22:52.130Z"
+            "timestamp": "2023-01-12T18:49:34.965Z"
         },
         {
             "description": "POST_/signin/rba-tmx_200 - Signin the user with RBA using ThreatMetrix service",
@@ -219,7 +219,7 @@
                     "isVerified": true
                 }
             },
-            "timestamp": "2023-01-12T18:22:52.429Z"
+            "timestamp": "2023-01-12T18:49:35.265Z"
         },
         {
             "description": "POST_/signin/rba-tmx_400 - Signin the user with RBA using ThreatMetrix service",
@@ -256,7 +256,7 @@
                     "errCode": "00007"
                 }
             },
-            "timestamp": "2023-01-12T18:22:52.514Z"
+            "timestamp": "2023-01-12T18:49:35.298Z"
         },
         {
             "description": "POST_/refresh/access/token_200 - Updates Access-Token with new payload.",
@@ -283,7 +283,7 @@
                     "ttl": 0
                 }
             },
-            "timestamp": "2023-01-12T18:22:52.925Z"
+            "timestamp": "2023-01-12T18:49:35.657Z"
         },
         {
             "description": "POST_/refresh/access/token_401 - Updates Access-Token with new payload.",
@@ -310,12 +310,10 @@
                     "statusCode": 401,
                     "error": "Unauthorized",
                     "message": "CDS jwt malformed",
-                    "errCode": "00001",
-                    "data": null,
-                    "stack": "Error: CDS jwt malformed"
+                    "errCode": "00001"
                 }
             },
-            "timestamp": "2023-01-12T18:22:52.977Z"
+            "timestamp": "2023-01-12T18:49:35.730Z"
         },
         {
             "description": "GET_/refresh/hybris/access/token_200 - Refresh Hybris access token.",
@@ -342,7 +340,7 @@
                     "scope": "string"
                 }
             },
-            "timestamp": "2023-01-12T18:22:53.209Z"
+            "timestamp": "2023-01-12T18:49:36.007Z"
         },
         {
             "description": "GET_/refresh/hybris/access/token_502 - Refresh Hybris access token.",
@@ -374,7 +372,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:22:53.247Z"
+            "timestamp": "2023-01-12T18:49:36.042Z"
         },
         {
             "description": "GET_/signout_200 - Logout a customer",
@@ -392,7 +390,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-12T18:22:54.448Z"
+            "timestamp": "2023-01-12T18:49:37.226Z"
         },
         {
             "description": "GET_/signout_401 - Logout a customer",
@@ -424,7 +422,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:22:54.507Z"
+            "timestamp": "2023-01-12T18:49:37.278Z"
         },
         {
             "description": "GET_/signout_403 - Logout a customer",
@@ -456,7 +454,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:22:54.574Z"
+            "timestamp": "2023-01-12T18:49:37.356Z"
         },
         {
             "description": "POST_/invalidate/password-changed_200 - API endpoint for killing active sessions",
@@ -475,7 +473,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-12T18:22:55.792Z"
+            "timestamp": "2023-01-12T18:49:38.590Z"
         },
         {
             "description": "POST_/invalidate/password-changed_400 - API endpoint for killing active sessions",
@@ -500,11 +498,10 @@
                     "statusCode": 400,
                     "error": "Bad Request",
                     "message": "Validation error(s)",
-                    "errCode": "00007",
-                    "stack": "Error: Validation error(s)"
+                    "errCode": "00007"
                 }
             },
-            "timestamp": "2023-01-12T18:22:55.863Z"
+            "timestamp": "2023-01-12T18:49:38.656Z"
         },
         {
             "description": "POST_/invalidate/password-changed_401 - API endpoint for killing active sessions",
@@ -537,7 +534,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:22:55.933Z"
+            "timestamp": "2023-01-12T18:49:38.717Z"
         },
         {
             "description": "POST_/invalidate/password-changed_403 - API endpoint for killing active sessions",
@@ -570,7 +567,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:22:56.011Z"
+            "timestamp": "2023-01-12T18:49:38.788Z"
         },
         {
             "description": "POST_/invalidate/password-updated_200 - API endpoint for killing active sessions",
@@ -591,7 +588,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-12T18:22:57.338Z"
+            "timestamp": "2023-01-12T18:49:40.098Z"
         },
         {
             "description": "POST_/invalidate/password-updated_400 - API endpoint for killing active sessions",
@@ -618,11 +615,10 @@
                     "statusCode": 400,
                     "error": "Bad Request",
                     "message": "Validation error(s)",
-                    "errCode": "00007",
-                    "stack": "Error: Validation error(s)"
+                    "errCode": "00007"
                 }
             },
-            "timestamp": "2023-01-12T18:22:57.389Z"
+            "timestamp": "2023-01-12T18:49:40.151Z"
         },
         {
             "description": "GET_/sso/check-cookie_302 - Check cookie if a user has already logged in.",
@@ -641,7 +637,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-12T18:22:58.674Z"
+            "timestamp": "2023-01-12T18:49:41.388Z"
         },
         {
             "description": "GET_/sso/check-cookie_401 - Check cookie if a user has already logged in.",
@@ -674,7 +670,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:22:58.716Z"
+            "timestamp": "2023-01-12T18:49:41.441Z"
         },
         {
             "description": "GET_/sso/check-cookie_403 - Check cookie if a user has already logged in.",
@@ -707,7 +703,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:22:58.796Z"
+            "timestamp": "2023-01-12T18:49:41.529Z"
         },
         {
             "description": "GET_/sso/set-cookie_302 - Set cookie to the refferer domain",
@@ -726,7 +722,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-12T18:23:00.097Z"
+            "timestamp": "2023-01-12T18:49:42.831Z"
         },
         {
             "description": "GET_/sso/set-cookie_401 - Set cookie to the refferer domain",
@@ -754,7 +750,7 @@
                     "errCode": "00007"
                 }
             },
-            "timestamp": "2023-01-12T18:23:00.154Z"
+            "timestamp": "2023-01-12T18:49:42.898Z"
         },
         {
             "description": "GET_/sso/set-cookie_403 - Set cookie to the refferer domain",
@@ -787,7 +783,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:23:00.205Z"
+            "timestamp": "2023-01-12T18:49:42.973Z"
         },
         {
             "description": "GET_/sso/3-party-cookie/enabled_200 - Check 3rd party cookies support",
@@ -810,7 +806,7 @@
                     "result": true
                 }
             },
-            "timestamp": "2023-01-12T18:23:00.530Z"
+            "timestamp": "2023-01-12T18:49:43.295Z"
         },
         {
             "description": "GET_/sso/3-party-cookie/enabled_401 - Check 3rd party cookies support",
@@ -842,7 +838,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:23:00.596Z"
+            "timestamp": "2023-01-12T18:49:43.339Z"
         },
         {
             "description": "GET_/sso/3-party-cookie/enabled_403 - Check 3rd party cookies support",
@@ -874,7 +870,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-12T18:23:00.681Z"
+            "timestamp": "2023-01-12T18:49:43.389Z"
         },
         {
             "description": "GET_/sso/signout_302 - Logout from all banners",
@@ -892,7 +888,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-12T18:23:01.990Z"
+            "timestamp": "2023-01-12T18:49:44.710Z"
         },
         {
             "description": "POST_/gigya/social/link-account_200 - Link user's account",
@@ -913,7 +909,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-12T18:23:04.995Z"
+            "timestamp": "2023-01-12T18:49:47.726Z"
         },
         {
             "description": "POST_/gigya/social/link-account_401 - Link user's account",
@@ -934,7 +930,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-12T18:23:07.999Z"
+            "timestamp": "2023-01-12T18:49:50.742Z"
         }
     ],
     "metadata": {
