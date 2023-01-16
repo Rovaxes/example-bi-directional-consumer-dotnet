@@ -1,0 +1,107 @@
+{
+    "consumer": {
+        "name": "sample-consumer"
+    },
+    "provider": {
+        "name": "cds.passbook-experience-api"
+    },
+    "interactions": [
+        {
+            "description": "GET_/api/v1/passbook_200 - Get passbook.",
+            "request": {
+                "method": "GET",
+                "path": "/api/v1/passbook",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": "string"
+            },
+            "timestamp": "2023-01-16T20:00:38.182Z"
+        },
+        {
+            "description": "GET_/api/v1/passbook_400 - Get passbook.",
+            "request": {
+                "method": "GET",
+                "path": "/api/v1/passbook",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "error": {
+                        "data": {},
+                        "errCode": "00000",
+                        "errOrigin": "CDS",
+                        "error": "Bad Request",
+                        "message": "Invalid parameters",
+                        "statusCode": 400,
+                        "requestId": "0"
+                    }
+                }
+            },
+            "timestamp": "2023-01-16T20:00:38.234Z"
+        },
+        {
+            "description": "GET_/health_200 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2023-01-16T20:00:41.249Z"
+        },
+        {
+            "description": "GET_/health_500 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 500,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2023-01-16T20:00:44.253Z"
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "2.0.0"
+        },
+        "client": {
+            "name": "pact-mountebank-adapter",
+            "version": "1.0.0"
+        }
+    }
+}
