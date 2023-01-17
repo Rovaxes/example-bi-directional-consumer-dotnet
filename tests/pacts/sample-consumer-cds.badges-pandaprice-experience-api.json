@@ -1,0 +1,174 @@
+{
+    "consumer": {
+        "name": "sample-consumer"
+    },
+    "provider": {
+        "name": "cds.badges-pandaprice-experience-api"
+    },
+    "interactions": [
+        {
+            "description": "POST_/panda/priceBadges_200 - Recieve Panda Badges and Prices for products via sku or product code",
+            "request": {
+                "method": "POST",
+                "path": "/panda/priceBadges",
+                "query": "",
+                "body": {
+                    "bannerId": "CTR",
+                    "storeId": "337",
+                    "productCodes": [
+                        "0789657P"
+                    ],
+                    "lang": "en",
+                    "lowStockThresholds": [],
+                    "hotDealThreshold": 0,
+                    "limitedThreshold": 0
+                },
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": [
+                    {
+                        "Badges": [],
+                        "Banner": "CTR",
+                        "Store": "0337",
+                        "Price": 9.99,
+                        "OriginalPrice": null,
+                        "CurrentPrice": {
+                            "value": 9.99,
+                            "minPrice": 9.99
+                        }
+                    }
+                ]
+            },
+            "timestamp": "2023-01-17T20:24:33.372Z"
+        },
+        {
+            "description": "POST_/panda/priceBadges_400 - Recieve Panda Badges and Prices for products via sku or product code",
+            "request": {
+                "method": "POST",
+                "path": "/panda/priceBadges",
+                "query": "",
+                "body": {
+                    "bannerId": "CTR",
+                    "storeId": "337",
+                    "productCodes": [
+                        "0789657P"
+                    ],
+                    "lang": "en",
+                    "lowStockThresholds": [],
+                    "hotDealThreshold": 0,
+                    "limitedThreshold": 0
+                },
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "statusCode": 400,
+                    "error": "Bad Request",
+                    "errors": [
+                        "Missing productCodes or skuCodes"
+                    ]
+                }
+            },
+            "timestamp": "2023-01-17T20:24:33.417Z"
+        },
+        {
+            "description": "POST_/panda/priceBadges_404 - Recieve Panda Badges and Prices for products via sku or product code",
+            "request": {
+                "method": "POST",
+                "path": "/panda/priceBadges",
+                "query": "",
+                "body": {
+                    "bannerId": "CTR",
+                    "storeId": "337",
+                    "productCodes": [
+                        "0789657P"
+                    ],
+                    "lang": "en",
+                    "lowStockThresholds": [],
+                    "hotDealThreshold": 0,
+                    "limitedThreshold": 0
+                },
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 404,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "statusCode": 404,
+                    "message": "Resource not found"
+                }
+            },
+            "timestamp": "2023-01-17T20:24:33.450Z"
+        },
+        {
+            "description": "GET_/health_200 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                }
+            },
+            "timestamp": "2023-01-17T20:24:36.466Z"
+        },
+        {
+            "description": "GET_/health_500 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 500,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2023-01-17T20:24:39.479Z"
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "2.0.0"
+        },
+        "client": {
+            "name": "pact-mountebank-adapter",
+            "version": "1.0.0"
+        }
+    }
+}
