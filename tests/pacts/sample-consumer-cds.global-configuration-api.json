@@ -3,14 +3,14 @@
         "name": "sample-consumer"
     },
     "provider": {
-        "name": "cds.passbook-experience-api"
+        "name": "cds.global-configuration-api"
     },
     "interactions": [
         {
-            "description": "GET_/api/v1/passbook_200 - Get passbook.",
+            "description": "GET_/globalConfiguration_200 - undefined",
             "request": {
                 "method": "GET",
-                "path": "/api/v1/passbook",
+                "path": "/globalConfiguration",
                 "query": "",
                 "headers": {
                     "Connection": "close",
@@ -23,15 +23,22 @@
                     "Connection": "close",
                     "Content-Type": "application/json"
                 },
-                "body": "string"
+                "body": {
+                    "globalProperties": [
+                        {
+                            "code": "string",
+                            "value": "string"
+                        }
+                    ]
+                }
             },
-            "timestamp": "2023-01-17T18:26:24.404Z"
+            "timestamp": "2023-01-17T18:57:45.786Z"
         },
         {
-            "description": "GET_/api/v1/passbook_400 - Get passbook.",
+            "description": "GET_/globalConfiguration_400 - undefined",
             "request": {
                 "method": "GET",
-                "path": "/api/v1/passbook",
+                "path": "/globalConfiguration",
                 "query": "",
                 "headers": {
                     "Connection": "close",
@@ -45,18 +52,19 @@
                     "Content-Type": "application/json"
                 },
                 "body": {
-                    "error": {
-                        "data": {},
-                        "errCode": "00000",
-                        "errOrigin": "CDS",
-                        "error": "Bad Request",
-                        "message": "Invalid parameters",
-                        "statusCode": 400,
-                        "requestId": "0"
-                    }
+                    "requestId": 0,
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "message": "string",
+                    "errCode": "string",
+                    "data": "string",
+                    "errors": [
+                        "string"
+                    ]
                 }
             },
-            "timestamp": "2023-01-17T18:26:24.439Z"
+            "timestamp": "2023-01-17T18:57:45.837Z"
         },
         {
             "description": "GET_/health_200 - The health status of the service",
@@ -74,7 +82,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-17T18:26:27.452Z"
+            "timestamp": "2023-01-17T18:57:48.848Z"
         },
         {
             "description": "GET_/health_500 - The health status of the service",
@@ -92,7 +100,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-17T18:26:30.461Z"
+            "timestamp": "2023-01-17T18:57:51.860Z"
         }
     ],
     "metadata": {
