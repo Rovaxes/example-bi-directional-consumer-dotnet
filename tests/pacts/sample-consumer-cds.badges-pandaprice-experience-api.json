@@ -34,9 +34,21 @@
                     "Connection": "close",
                     "Content-Type": "application/json"
                 },
-                "body": "string"
+                "body": [
+                    {
+                        "Badges": [],
+                        "Banner": "CTR",
+                        "Store": "0337",
+                        "Price": 9.99,
+                        "OriginalPrice": {},
+                        "CurrentPrice": {
+                            "value": 9.99,
+                            "minPrice": 9.99
+                        }
+                    }
+                ]
             },
-            "timestamp": "2023-01-18T18:41:49.312Z"
+            "timestamp": "2023-01-18T18:49:21.554Z"
         },
         {
             "description": "POST_/panda/priceBadges_400 - Recieve Panda Badges and Prices for products via sku or product code",
@@ -74,7 +86,7 @@
                     ]
                 }
             },
-            "timestamp": "2023-01-18T18:41:49.368Z"
+            "timestamp": "2023-01-18T18:49:21.621Z"
         },
         {
             "description": "POST_/panda/priceBadges_404 - Recieve Panda Badges and Prices for products via sku or product code",
@@ -109,7 +121,7 @@
                     "message": "Resource not found"
                 }
             },
-            "timestamp": "2023-01-18T18:41:49.410Z"
+            "timestamp": "2023-01-18T18:49:21.662Z"
         },
         {
             "description": "GET_/health_200 - The health status of the service",
@@ -129,7 +141,7 @@
                     "Content-Type": "application/json"
                 }
             },
-            "timestamp": "2023-01-18T18:41:52.415Z"
+            "timestamp": "2023-01-18T18:49:24.678Z"
         },
         {
             "description": "GET_/health_500 - The health status of the service",
@@ -147,7 +159,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2023-01-18T18:41:55.429Z"
+            "timestamp": "2023-01-18T18:49:27.686Z"
         }
     ],
     "metadata": {
