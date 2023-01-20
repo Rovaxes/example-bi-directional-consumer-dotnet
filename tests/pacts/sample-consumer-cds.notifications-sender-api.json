@@ -1,0 +1,295 @@
+{
+    "consumer": {
+        "name": "sample-consumer"
+    },
+    "provider": {
+        "name": "cds.notifications-sender-api"
+    },
+    "interactions": [
+        {
+            "description": "POST_/execute-flow_200 - Executes flow with specified provider by template name",
+            "request": {
+                "method": "POST",
+                "path": "/execute-flow",
+                "query": "",
+                "body": {
+                    "storeNumber": "0100",
+                    "template": "ShareCart",
+                    "communicationType": "SMS",
+                    "language": "fr",
+                    "provider": "Twillio",
+                    "from": "647XXXXXXX",
+                    "destinationPhone": [],
+                    "destinationEmail": [],
+                    "templateContent": [
+                        {
+                            "name": "name",
+                            "value": "test"
+                        },
+                        {
+                            "name": "sc_url",
+                            "value": "test"
+                        }
+                    ]
+                },
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2023-01-20T20:08:34.805Z"
+        },
+        {
+            "description": "POST_/execute-flow_400 - Executes flow with specified provider by template name",
+            "request": {
+                "method": "POST",
+                "path": "/execute-flow",
+                "query": "",
+                "body": {
+                    "storeNumber": "0100",
+                    "template": "ShareCart",
+                    "communicationType": "SMS",
+                    "language": "fr",
+                    "provider": "Twillio",
+                    "from": "647XXXXXXX",
+                    "destinationPhone": [],
+                    "destinationEmail": [],
+                    "templateContent": [
+                        {
+                            "name": "name",
+                            "value": "test"
+                        },
+                        {
+                            "name": "sc_url",
+                            "value": "test"
+                        }
+                    ]
+                },
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "errorCode": 200,
+                    "errorMessage": "Failed to execute flow. The requested resource /Flows/FW53d093d51446b9bf88a40f6b255d2a40/Executions was not found",
+                    "errorDetails": [
+                        "380-681-2345",
+                        "380-681-2345"
+                    ]
+                }
+            },
+            "timestamp": "2023-01-20T20:08:34.850Z"
+        },
+        {
+            "description": "POST_/execute-flow_500 - Executes flow with specified provider by template name",
+            "request": {
+                "method": "POST",
+                "path": "/execute-flow",
+                "query": "",
+                "body": {
+                    "storeNumber": "0100",
+                    "template": "ShareCart",
+                    "communicationType": "SMS",
+                    "language": "fr",
+                    "provider": "Twillio",
+                    "from": "647XXXXXXX",
+                    "destinationPhone": [],
+                    "destinationEmail": [],
+                    "templateContent": [
+                        {
+                            "name": "name",
+                            "value": "test"
+                        },
+                        {
+                            "name": "sc_url",
+                            "value": "test"
+                        }
+                    ]
+                },
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 500,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "status": "failed",
+                    "message": "System Error."
+                }
+            },
+            "timestamp": "2023-01-20T20:08:34.885Z"
+        },
+        {
+            "description": "POST_/send_200 - Sends notification with specified provider",
+            "request": {
+                "method": "POST",
+                "path": "/send",
+                "query": "",
+                "body": {
+                    "storeNumber": "0100",
+                    "template": "Chit_Order_cancelled_customer",
+                    "communicationType": "SMS",
+                    "provider": "Twilio",
+                    "language": "fr",
+                    "destinationPhone": [
+                        "6135550113"
+                    ],
+                    "destinationEmail": [],
+                    "templateContent": [
+                        {
+                            "name": "ORDER_NUMBER",
+                            "value": "this-is-order-number"
+                        }
+                    ]
+                },
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2023-01-20T20:08:36.206Z"
+        },
+        {
+            "description": "POST_/send_400 - Sends notification with specified provider",
+            "request": {
+                "method": "POST",
+                "path": "/send",
+                "query": "",
+                "body": {
+                    "storeNumber": "0100",
+                    "template": "Chit_Order_cancelled_customer",
+                    "communicationType": "SMS",
+                    "provider": "Twilio",
+                    "language": "fr",
+                    "destinationPhone": [
+                        "6135550113"
+                    ],
+                    "destinationEmail": [],
+                    "templateContent": [
+                        {
+                            "name": "ORDER_NUMBER",
+                            "value": "this-is-order-number"
+                        }
+                    ]
+                },
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "errorCode": 400,
+                    "errorMessage": "No Valid Provider Account",
+                    "errorDetails": [
+                        "Please configure Store 0100 for this service or allow service through Global Account"
+                    ]
+                }
+            },
+            "timestamp": "2023-01-20T20:08:36.245Z"
+        },
+        {
+            "description": "POST_/send_500 - Sends notification with specified provider",
+            "request": {
+                "method": "POST",
+                "path": "/send",
+                "query": "",
+                "body": {
+                    "storeNumber": "0100",
+                    "template": "Chit_Order_cancelled_customer",
+                    "communicationType": "SMS",
+                    "provider": "Twilio",
+                    "language": "fr",
+                    "destinationPhone": [
+                        "6135550113"
+                    ],
+                    "destinationEmail": [],
+                    "templateContent": [
+                        {
+                            "name": "ORDER_NUMBER",
+                            "value": "this-is-order-number"
+                        }
+                    ]
+                },
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 500,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "status": "failed",
+                    "message": "System Error."
+                }
+            },
+            "timestamp": "2023-01-20T20:08:36.276Z"
+        },
+        {
+            "description": "GET_/health/_200 - Service health",
+            "request": {
+                "method": "GET",
+                "path": "/health/",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "build": "string",
+                    "message": "string",
+                    "status": "string",
+                    "uptime": 0
+                }
+            },
+            "timestamp": "2023-01-20T20:08:36.428Z"
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "2.0.0"
+        },
+        "client": {
+            "name": "pact-mountebank-adapter",
+            "version": "1.0.0"
+        }
+    }
+}
