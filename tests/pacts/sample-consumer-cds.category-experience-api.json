@@ -1,0 +1,240 @@
+{
+    "consumer": {
+        "name": "sample-consumer"
+    },
+    "provider": {
+        "name": "cds.category-experience-api"
+    },
+    "interactions": [
+        {
+            "description": "GET_/api/v1/categories/DC0000004_200 - Get the category tree for a provided identifier.",
+            "request": {
+                "method": "GET",
+                "path": "/api/v1/categories/DC0000004",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
+                    "baseSiteId": "CTR"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "id": "DC0000004",
+                    "name": "Tools & Hardware",
+                    "description": "Whether you’re a weekend DIYer or a professional contractor, we have the quality tools and accessories you need to design, build and fix with confidence.",
+                    "url": [
+                        {
+                            "url": "/fr/cat/outils-et-quincaillerie-DC0000004.html",
+                            "hreflang": "fr"
+                        },
+                        {
+                            "url": "/en/cat/tools-hardware-DC0000004.html",
+                            "hreflang": "en"
+                        },
+                        {
+                            "url": "/en/cat/tools-hardware-DC0000004.html",
+                            "hreflang": "x-default"
+                        }
+                    ],
+                    "image": "https://media-www.canadiantire.ca/product/automotive/auto-maintenance/auto-shop-equipment-supplies/0095006/certified-12v-inflator-b6652fd3-5f83-4dd4-9a8b-faf51d9a5e94.png",
+                    "subcategories": [],
+                    "breadcrumbList": [
+                        {
+                            "label": "Tools & Hardware",
+                            "url": "/en/cat/tools-hardware-DC0000004.html"
+                        }
+                    ],
+                    "isFitmentRequired": false,
+                    "noFollow": false,
+                    "noIndex": false,
+                    "productWheelType": null,
+                    "defaultView": "GRID",
+                    "seoTitle": "Tools & Hardware",
+                    "seoCopy": "",
+                    "seoDescription": "Shop Canadian Tire online for quality power and hand tools, replacement parts, paint, garage storage and much more. Pick up in store at any of 500+ locations.",
+                    "canonicalUrl": "",
+                    "searchLink": "?q1=DC0000004;x1=ast-id-level-1;lang=en_CA"
+                }
+            },
+            "timestamp": "2023-01-23T20:42:08.500Z"
+        },
+        {
+            "description": "GET_/api/v1/categories/DC0000004_400 - Get the category tree for a provided identifier.",
+            "request": {
+                "method": "GET",
+                "path": "/api/v1/categories/DC0000004",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
+                    "baseSiteId": "CTR"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "statusCode": 400,
+                    "message": "Could not retrieve data from Hybris.",
+                    "errors": [
+                        "Base site Sample doesn't exist"
+                    ],
+                    "requestId": 0,
+                    "errCode": "0",
+                    "errOrigin": "CDS",
+                    "isCdsError": true
+                }
+            },
+            "timestamp": "2023-01-23T20:42:08.546Z"
+        },
+        {
+            "description": "GET_/api/v1/categories/DC0000004_500 - Get the category tree for a provided identifier.",
+            "request": {
+                "method": "GET",
+                "path": "/api/v1/categories/DC0000004",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
+                    "baseSiteId": "CTR"
+                }
+            },
+            "response": {
+                "status": 500,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "statusCode": 500,
+                    "message": "Could not retrieve data from Hybris.",
+                    "errors": [
+                        "Category with code 'DD045445' in CatalogVersion 'ctcCanadianTireProductCatalog.Staged' not found!"
+                    ],
+                    "requestId": 0,
+                    "errCode": "0",
+                    "errOrigin": "CDS",
+                    "isCdsError": true
+                }
+            },
+            "timestamp": "2023-01-23T20:42:08.598Z"
+        },
+        {
+            "description": "GET_/api/v1/categories_200 - Get the category tree for a provided identifier.",
+            "request": {
+                "method": "GET",
+                "path": "/api/v1/categories",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
+                    "baseSiteId": "CTR"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "categories": [
+                        {
+                            "name": "Tools & Hardware",
+                            "id": "DC0000004",
+                            "url": "/en/cat/tools-hardware-DC0000004.html",
+                            "image": ""
+                        }
+                    ]
+                }
+            },
+            "timestamp": "2023-01-23T20:42:08.810Z"
+        },
+        {
+            "description": "GET_/api/v1/categories_400 - Get the category tree for a provided identifier.",
+            "request": {
+                "method": "GET",
+                "path": "/api/v1/categories",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
+                    "baseSiteId": "CTR"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "statusCode": 400,
+                    "message": "Could not retrieve data from Hybris.",
+                    "errors": [
+                        "Base site Sample doesn't exist"
+                    ],
+                    "requestId": 0,
+                    "errCode": "0",
+                    "errOrigin": "CDS",
+                    "isCdsError": true
+                }
+            },
+            "timestamp": "2023-01-23T20:42:08.845Z"
+        },
+        {
+            "description": "GET_/health_200 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2023-01-23T20:42:11.857Z"
+        },
+        {
+            "description": "GET_/health_500 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 500,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2023-01-23T20:42:14.869Z"
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "2.0.0"
+        },
+        "client": {
+            "name": "pact-mountebank-adapter",
+            "version": "1.0.0"
+        }
+    }
+}
